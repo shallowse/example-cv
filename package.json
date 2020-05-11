@@ -1,0 +1,14 @@
+{
+  "name": "lut-front-end",
+  "version": "1.0.0",
+  "description": "Project work",
+  "main": "index.js",
+  "scripts": {
+    "css-devel": "node-sass --output-style expanded --watch --recursive scss/main.scss -o dist/css"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
