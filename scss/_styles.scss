@@ -62,51 +62,20 @@ header {
         }
     }
 }
-section.hero {
-    margin-top: 70px;
-    background: url("../img/kuva-1.jpg");
-    background-position: top center;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center;
-    line-height: 1.1;
-  }
   
-  section.hero .hero-text-flex-column {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  section.hero h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
-  }
-  
-  section.hero p {
-    font-weight: 400;
-    font-size: 1.8rem;
-  }
-  
-  @media (min-width: 576px) {
-    section.hero h1 {
-      font-size: 4.5rem;
-    }
-  }
 /* SECTION */
 section.hero {
     margin-top: $header-height;
-    background: url('../img/kuva-1.jpg');
+    background: url('../img/kuva-16.jpg');
     background-position: top center;
     background-size: cover;
-    height: calc(100vh - #{$header-height}px);
+    height: 100vh;
 
     .hero-text {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         height: 100%;
+        text-align: center;
     }
 }
