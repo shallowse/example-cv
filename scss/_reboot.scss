@@ -1,12 +1,3 @@
-$font-size-base:    1rem;
-$h1-font-size:      $font-size-base * 2.5;
-$h2-font-size:      $font-size-base * 2;
-$h3-font-size:      $font-size-base * 1.75;
-$h4-font-size:      $font-size-base * 1.5;
-$h5-font-size:      $font-size-base * 1.25;
-$h6-font-size:      $font-size-base;
-
-
 *,
 *::before,
 *::after {
@@ -16,7 +7,7 @@ $h6-font-size:      $font-size-base;
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.1;
     color: black;
     background-color: white;
 }
@@ -26,39 +17,43 @@ body {
     margin-bottom: 0.5rem;
 }
 
-h1 {
-    @extend %heading;
-    font-size: $h1-font-size;
-}
-
-h2 {
-    @extend %heading;
-    font-size: $h2-font-size;
-}
-
-h3 {
-    @extend %heading;
-    font-size: $h3-font-size;
-}
-
-h4 {
-    @extend %heading;
-    font-size: $h4-font-size;
-}
-
-h5 {
-    @extend %heading;
-    font-size: $h5-font-size;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     @extend %heading;
-    font-size: $h6-font-size;
+}
+
+// Set responsive font-size
+@for $i from 1 through 6 {
+    $hname: h#{$i};
+    $n: map-get($header-font-sizes, $hname);
+
+    @each $key, $_ in $media-breakpoints {
+        @include media-breakpoint($key) {
+            #{$hname} {
+                font-size: $n;
+            }
+            $n: $n * $font-size-multiplier;
+        }
+    }
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+$n: $p-font-size;
+@each $key, $_ in $media-breakpoints {
+    @include media-breakpoint($key) {
+        p {
+            font-size: $n;
+        }
+    }
+    $n: $n * 1.05;
 }
 
 a {
@@ -70,4 +65,3 @@ img {
     height: auto;
     vertical-align: middle;
 }
-

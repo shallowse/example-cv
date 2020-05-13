@@ -7,43 +7,178 @@
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.1;
   color: black;
   background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.55rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 5.915rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 7.6895rem;
+  }
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 5.07rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 6.591rem;
+  }
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3.575rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h3 {
+    font-size: 4.6475rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 6.04175rem;
+  }
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h4 {
+    font-size: 4.225rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 5.4925rem;
+  }
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 2.925rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h5 {
+    font-size: 3.8025rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h5 {
+    font-size: 4.94325rem;
+  }
 }
 
 h6 {
   font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h6 {
+    font-size: 1.69rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h6 {
+    font-size: 2.197rem;
+  }
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.92938rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 2.02584rem;
+  }
 }
 
 a {
