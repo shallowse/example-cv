@@ -196,3 +196,58 @@ section.hero p {
     font-size: 5rem;
   }
 }
+
+/* FOOTER */
+footer {
+  color: black;
+}
+
+footer a {
+  display: block;
+  text-align: center;
+}
+
+footer a i {
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-out;
+}
+
+footer a i:hover {
+  color: #1b1642;
+}
+
+footer .copy {
+  padding: 3.5em 0 0;
+}
+
+/* 404.html */
+.row-404 {
+  height: 100vh;
+}
+
+.row-404 h1 {
+  font-size: 2.5em;
+}
+
+.row-404 h1 span {
+  font-size: 3em;
+}
+
+.row-404 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+}
+
+.row-404 a:hover {
+  background-color: rgba(0, 120, 120, 0.5);
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .row-404 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
