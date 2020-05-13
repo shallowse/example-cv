@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.1;
+  line-height: 1.5;
   color: black;
   background-color: white;
 }
@@ -23,162 +23,33 @@ h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 4.55rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h1 {
-    font-size: 5.915rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 7.6895rem;
-  }
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-@media (min-width: 768px) {
-  h2 {
-    font-size: 3.9rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h2 {
-    font-size: 5.07rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 6.591rem;
-  }
-}
-
-h3 {
-  font-size: 2.75rem;
-}
-
-@media (min-width: 768px) {
-  h3 {
-    font-size: 3.575rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h3 {
-    font-size: 4.6475rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 6.04175rem;
-  }
-}
-
-h4 {
   font-size: 2.5rem;
 }
 
-@media (min-width: 768px) {
-  h4 {
-    font-size: 3.25rem;
-  }
+h2 {
+  font-size: 2rem;
 }
 
-@media (min-width: 992px) {
-  h4 {
-    font-size: 4.225rem;
-  }
+h3 {
+  font-size: 1.75rem;
 }
 
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 5.4925rem;
-  }
+h4 {
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 2.25rem;
-}
-
-@media (min-width: 768px) {
-  h5 {
-    font-size: 2.925rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h5 {
-    font-size: 3.8025rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h5 {
-    font-size: 4.94325rem;
-  }
+  font-size: 1.25rem;
 }
 
 h6 {
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  h6 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h6 {
-    font-size: 1.69rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h6 {
-    font-size: 2.197rem;
-  }
-}
-
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.75rem;
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: 1.8375rem;
-  }
-}
-
-@media (min-width: 992px) {
-  p {
-    font-size: 1.92938rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  p {
-    font-size: 2.02584rem;
-  }
+  font-size: 1.125rem;
 }
 
 a {
@@ -189,6 +60,43 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+/* source: https://github.com/twbs/bootstrap/ */
+.card {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 24px rgba(27, 22, 66, 0.04), 0 44px 74px rgba(27, 22, 66, 0.06);
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem 1.15rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+/* source: https://mastersofdev.fi */
+.card-rounded-top-left {
+  border-top-left-radius: 1rem;
+}
+
+.card-rounded-bottom-right {
+  border-bottom-right-radius: 1rem;
 }
 
 body {
@@ -268,4 +176,23 @@ section.hero .hero-text {
   justify-content: center;
   height: 100%;
   text-align: center;
+}
+
+section.hero p {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 720px) {
+  section.hero h1 {
+    font-size: 4rem;
+  }
+  section.hero p {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 960px) {
+  section.hero h1 {
+    font-size: 5rem;
+  }
 }

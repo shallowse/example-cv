@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    line-height: 1.1;
+    line-height: 1.5;
     color: black;
     background-color: white;
 }
@@ -26,34 +26,17 @@ h6 {
     @extend %heading;
 }
 
-// Set responsive font-size
 @for $i from 1 through 6 {
     $hname: h#{$i};
-    $n: map-get($header-font-sizes, $hname);
-
-    @each $key, $_ in $media-breakpoints {
-        @include media-breakpoint($key) {
-            #{$hname} {
-                font-size: $n;
-            }
-            $n: $n * $font-size-multiplier;
-        }
+    #{$hname} {
+        font-size: map-get($header-font-sizes, $hname);
     }
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-}
-
-$n: $p-font-size;
-@each $key, $_ in $media-breakpoints {
-    @include media-breakpoint($key) {
-        p {
-            font-size: $n;
-        }
-    }
-    $n: $n * 1.05;
+    font-size: 1.125rem;
 }
 
 a {

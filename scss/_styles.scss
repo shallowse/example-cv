@@ -17,7 +17,6 @@ p {
     height: 100%;
 }
 
-
 /* HEADER */
 header {
     position: absolute;
@@ -60,11 +59,11 @@ header {
         }
     }
 }
-  
+
 /* SECTION */
 section.hero {
     margin-top: $header-height;
-    background: url('../img/f1.jpg');
+    background: url("../img/f1.jpg");
     background-position: top center;
     background-size: cover;
     height: 100vh;
@@ -75,5 +74,25 @@ section.hero {
         justify-content: center;
         height: 100%;
         text-align: center;
+    }
+
+    p {
+        font-size: 1.75rem;
+    }
+
+    @include media-breakpoint(md) {
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2.25rem;
+        }
+    }
+
+    @include media-breakpoint(lg) {
+        h1 {
+            font-size: 5rem;
+        }
     }
 }
