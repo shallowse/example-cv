@@ -197,6 +197,11 @@ section.hero p {
   }
 }
 
+/* CONTENT-01 */
+section.content-01 .card-body p {
+  font-size: 1rem;
+}
+
 /* FOOTER */
 footer {
   color: black;
@@ -227,11 +232,11 @@ footer .copy {
 }
 
 .row-404 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .row-404 h1 span {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .row-404 a {
