@@ -114,6 +114,51 @@ section.content-01 {
     }
 }
 
+/* SECTION-CV */
+section.hero-cv {
+    margin-top: $header-height;
+    text-align: center;
+    letter-spacing: 1rem;
+
+    @include media-breakpoint(md) {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    @include media-breakpoint(lg) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+}
+
+section.content-cv {
+    ul {
+        list-style-type: none;
+        padding-left: 0.5rem;
+    }
+
+    ul > li {
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+        display: block;
+        position: relative;
+
+        &::before {
+            content: "-";
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    p.summary-text {
+        font-size: 1rem;
+        color: black;
+    }
+}
+
 /* FOOTER */
 footer {
     color: black;
