@@ -102,6 +102,16 @@ section.content-01 {
     .card-body p {
         font-size: 1rem;
     }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    ul > li {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* FOOTER */
